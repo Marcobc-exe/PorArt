@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/login.css">
+    <title>Crear Cuenta</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="Assets/imgs/logo.png" alt="" class="logo"></a>
+        <nav class="menu">
+                <ul class="nav_links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Dibujos</a></li>
+                    <li><a href="login.html" id="login">Login</a></li>
+                    <li><a href="register.html" id="login">Register</a></li>
+                    <li><img src="#" alt=""></li>
+                </ul>
+            </img>
+        </nav>
+    </header>
+    <div class="title">
+        <h1>Creación de Cuenta</h1>
+    </div>
+        <form class="box" method="post" name="form" onSubmit="return validarFormulario();">
+            <input type="text" name="" placeholder="Correo">
+            <input type="text" name="" placeholder="Telefono">
+            <input type="password" name="" placeholder="Contraseña">
+            <input type="password" name="" placeholder="Confirmar Contraseña"><br>
+            <input type="checkbox" name="termsCond"><label> Al registrarse, acepta los <strong style="color:#fa983a">terminos y condiciones.</strong></label><br>
+            <div id="info"></div>
+            <input type="submit" value="Crear Cuenta">
+        </form>
+        <script>
+            const validarFormulario = () => {
+                elemento = document.forms["form"]["termsCond"].checked;
+                if (elemento == true){
+                    return false;
+                } else {
+                    document.getElementById("info").innerHTML = "¡Debe aceptar los terminos y condiciones de contrato!";
+                    return false;
+                }
+            }
+        </script>
+</body>
+</html>

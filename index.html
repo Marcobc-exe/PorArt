@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="Assets/css/slider.css">
+    <link rel="stylesheet" href="Assets/css/row.css">
+    <link rel="stylesheet" href="Assets/css/btnnav.css">
+    <link rel="stylesheet" href="Assets/css/normalize.css">
+    <title>PorArt</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="Assets/imgs/logo.png" alt="" class="logo"></a>
+        <nav class="menu">
+                <ul class="nav_links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Dibujos</a></li>
+                    <li><a href="login.html" id="login">Login</a></li>
+                    <li><a href="register.html" id="login">Register</a></li>
+                    <li><img src="#" alt=""></li>
+                </ul>
+            </img>
+        </nav>
+    </header>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="Assets/imgs/slider/img1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="Assets/imgs/slider/img2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="Assets/imgs/slider/img3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="btn-main">
+            <a href="#" class="btnpartes">Afiches</a>
+            <a href="#" class="btnpartes">Logos</a>
+            <a href="#" class="btnpartes">Banner</a>
+            <a href="#" class="btnpartes">Dibujos</a>
+    </div>
+    
+    <div class="row">
+        <div class="column" onclick="openTab('b1');" style="background:#353b48;">
+          Logo 1
+        </div>
+        <div class="column" onclick="openTab('b2');" style="background:#353b48;">
+          Logo 2
+        </div>
+        <div class="column" onclick="openTab('b3');" style="background:#353b48;">
+          Logo 3
+        </div>
+        <div class="column" onclick="openTab('b4');" style="background:#353b48;">
+          Logo 4
+        </div>
+    </div>
+    
+    <div id="b1" class="containerTab" style="display:none;background:#353b48">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>Marco pete</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="100" height="100" 
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="7" r="4" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+        </svg>
+    </div>
+    
+    <div id="b2" class="containerTab" style="display:none;background:#353b48">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>Lalo gey</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="100" height="100" 
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="7" r="4" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+        </svg>
+    </div>
+    
+    <div id="b3" class="containerTab" style="display:none;background:#353b48">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>jose dios</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="100" height="100" 
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="7" r="4" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+        </svg>
+    </div>
+
+    <div id="b4" class="containerTab" style="display:none;background:#353b48">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <h2>uwu </h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="100" height="100" 
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="12" cy="7" r="4" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+        </svg>
+    </div>
+    <footer class="footer-main">
+
+    </footer>
+    <script src="Assets/js/slider.js"></script>
+    <script src="Assets/js/row.js"></script>
+</body>
+</html>
