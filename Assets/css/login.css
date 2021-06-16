@@ -83,6 +83,30 @@ body{
 label{
     cursor: pointer;
 }
+
+.PassOlvidada{
+    position: relative;
+    left: 37px;
+    margin: 20px;
+    transition: 0.25s;
+}
+
+.PassOlvidada:hover{
+    color: #e5383b;
+}
+
+.registrate{
+    position: relative;
+    left: 98px;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    transition: 0.25s;
+}
+
+.registrate:hover{
+    color: #fa983a;
+}
 /* Final formulario box con inputs */
 
 /* Css Navbar */

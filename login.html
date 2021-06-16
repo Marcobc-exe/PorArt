@@ -12,7 +12,7 @@
         <a href="index.html"><img src="Assets/imgs/logo.png" alt="" class="logo"></a>
         <nav class="menu">
                 <ul class="nav_links">
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="login.html">Inicio</a></li>
                     <li><a href="#">Dibujos</a></li>
                     <li><a href="login.html" id="login">Login</a></li>
                     <li><a href="register.html" id="login">Register</a></li>
@@ -27,20 +27,9 @@
         <form class="box" method="post" name="form" onSubmit="return validarFormulario();">
             <input type="text" name="" placeholder="Correo">
             <input type="password" name="" placeholder="Contraseña"><br>
-            <input type="checkbox" name="termsCond"><label> Al registrarse, acepta los <strong style="color:#fa983a">terminos y condiciones.</strong></label><br>
-            <div id="info"></div>
-            <input type="submit" value="Iniciar">
+            <label class="PassOlvidada">¿Olvidaste tu contraseña?</label>
+            <input type="submit" value="Iniciar"><br>
+            <a href="register.html" class="registrate">Registrate</a>
         </form>
-        <script>
-            const validarFormulario = () => {
-                elemento = document.forms["form"]["termsCond"].checked;
-                if (elemento == true){
-                    return false;
-                } else {
-                    document.getElementById("info").innerHTML = "¡Debe aceptar los terminos y condiciones de contrato!";
-                    return false;
-                }
-            }
-        </script>
 </body>
 </html>

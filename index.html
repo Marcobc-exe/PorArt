@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/css/navbar.css" type="text/css">
     <link rel="stylesheet" href="Assets/css/slider.css">
-    <link rel="stylesheet" href="Assets/css/row.css">
     <link rel="stylesheet" href="Assets/css/btnnav.css">
     <link rel="stylesheet" href="Assets/css/normalize.css">
+    <link rel="stylesheet" href="Assets/css/CardsIndex.css">
     <title>PorArt</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <a href="index.html"><img src="Assets/imgs/logo.png" alt="" class="logo"></a>
         <nav class="menu">
                 <ul class="nav_links">
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="login.html">Inicio</a></li>
                     <li><a href="#">Dibujos</a></li>
                     <li><a href="login.html" id="login">Login</a></li>
                     <li><a href="register.html" id="login">Register</a></li>
@@ -50,69 +50,36 @@
             <a href="#" class="btnpartes">Banner</a>
             <a href="#" class="btnpartes">Dibujos</a>
     </div>
-    
-    <div class="row">
-        <div class="column" onclick="openTab('b1');" style="background:#353b48;">
-          Logo 1
+    <div class="container">
+        <div class="card">
+            <img src="Assets/imgs/cards/worldwide.png" alt="Denim Jeans" style="width:100%">
+            <h1>User name</h1>
+            <p class="price">$19.99</p>
+            <p><button>Ver Producto</button></p>
         </div>
-        <div class="column" onclick="openTab('b2');" style="background:#353b48;">
-          Logo 2
+        <div class="card">
+            <img src="Assets/imgs/cards/sent.png" alt="Denim Jeans" style="width:100%">
+            <h1>User name</h1>
+            <p class="price">$19.99</p>
+            <p><button>Ver Producto</button></p>
         </div>
-        <div class="column" onclick="openTab('b3');" style="background:#353b48;">
-          Logo 3
+        <div class="card">
+            <img src="Assets/imgs/cards/target.png" alt="Denim Jeans" style="width:100%">
+            <h1>User name</h1>
+            <p class="price">$19.99</p>
+            <p><button>Ver Producto</button></p>
         </div>
-        <div class="column" onclick="openTab('b4');" style="background:#353b48;">
-          Logo 4
+        <div class="card">
+            <img src="Assets/imgs/cards/faq.png" alt="Denim Jeans" style="width:100%">
+            <h1>User name</h1>
+            <p class="price">$19.99</p>
+            <p><button>Ver Producto</button></p>
         </div>
-    </div>
-    
-    <div id="b1" class="containerTab" style="display:none;background:#353b48">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <h2>Marco pete</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="100" height="100" 
-        viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <circle cx="12" cy="7" r="4" />
-            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-        </svg>
-    </div>
-    
-    <div id="b2" class="containerTab" style="display:none;background:#353b48">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <h2>Lalo gey</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="100" height="100" 
-        viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <circle cx="12" cy="7" r="4" />
-            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-        </svg>
     </div>
     
-    <div id="b3" class="containerTab" style="display:none;background:#353b48">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <h2>jose dios</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="100" height="100" 
-        viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <circle cx="12" cy="7" r="4" />
-            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-        </svg>
-    </div>
-
-    <div id="b4" class="containerTab" style="display:none;background:#353b48">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <h2>uwu </h2>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="100" height="100" 
-        viewBox="0 0 24 24" stroke-width="1.5" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-            <circle cx="12" cy="7" r="4" />
-            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-        </svg>
-    </div>
     <footer class="footer-main">
 
     </footer>
     <script src="Assets/js/slider.js"></script>
-    <script src="Assets/js/row.js"></script>
 </body>
 </html>
