@@ -45,6 +45,7 @@
   background: #0088a9;
 }
 
+/* Código grid */
 .container{
   margin: 20px auto;
   display: grid;
@@ -53,3 +54,4 @@
   grid-template-rows: repeat(2, auto);
   grid-template-areas: "card card card card";
 }
+
