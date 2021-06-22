@@ -1,0 +1,41 @@
+.titulo {
+    text-align: center;
+    margin: 30px;
+    font-size: 44px;
+}
+
+.contenido .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    text-align: center;
+    font-family: arial;
+    border: 1px solid;
+    border-color: #2c3e50;
+    cursor: pointer;
+    grid-area: card;
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+
+.card img{
+    padding: 20px;
+}
+
+.side-left {
+    background: #353b48;
+    padding: 0px;
+    margin: 0;
+    height: 800px;
+    grid-area: side-left;
+}
+
+.contenido {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "side-left card card card"
+                            "side-left card card card";
+}
