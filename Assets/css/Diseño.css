@@ -10,13 +10,9 @@
     height: 300px;
     margin: 40px;
     text-align: center;
-    font-family: arial;
     border: 1px solid;
     border-color: #2c3e50;
     cursor: pointer;
-    grid-area: card;
-    grid-column: 3/4;
-    grid-row: 2/4;
 }
 
 .card img{
@@ -24,18 +20,52 @@
 }
 
 .side-left {
-    background: #353b48;
-    padding: 0px;
+    background: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
     margin: 0;
-    height: 800px;
-    grid-area: side-left;
+    height: 600px ;
+    min-width: 50px;
+    border-radius: 5px;
 }
 
 .contenido {
+    width: 90%;
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "side-left card card card"
-                            "side-left card card card";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-areas: "side-left card card card";
+}
+
+.first-side-left h4{
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.first-side-left> label> input {
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.first-side-left label {
+    cursor: pointer;
+}
+
+.second-side-left h4 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.second-side-left > label > input {
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+.second-side-left label{
+    cursor: pointer;
 }
