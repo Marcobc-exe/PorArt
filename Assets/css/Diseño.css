@@ -8,8 +8,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 300px;
     height: 300px;
-    margin: 40px;
-    text-align: center;
+    margin: 20px;
     border: 1px solid;
     border-color: #2c3e50;
     cursor: pointer;
@@ -26,17 +25,19 @@
     border-right: 1px solid black;
     padding: 10px;
     margin: 0;
-    height: 600px ;
-    min-width: 50px;
+    max-height: 700px auto;
+    width: 300px;
+    margin-bottom: 20px;
     border-radius: 5px;
+    grid-row-start: 1;
+    grid-row-end: 5;
 }
 
 .contenido {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    grid-template-areas: "side-left card card card";
+    grid-template-rows: repeat(auto, 2);
 }
 
 .first-side-left h4{
@@ -45,7 +46,7 @@
     padding: 10px;
 }
 
-.first-side-left> label> input {
+.first-side-left > label > input {
     margin: 5px 10px;
     cursor: pointer;
 }
