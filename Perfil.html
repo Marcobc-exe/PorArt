@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Assets/css/navbar.css" type="text/css">
     <link rel="stylesheet" href="Assets/css/footer.css">
     <link rel="stylesheet" href="Assets/css/perfil.css">
+    <link rel="stylesheet" href="Assets/css/sliderPerfil.css">
     <title>Perfil</title>
 </head>
 <body>
@@ -70,7 +71,24 @@
                 <i class="fa-caret-down"></i>
             </button>
             <div class="container-info">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="Assets/imgs/cards/diagram.png" style="width:50%">
+                        <div class="text">Caption Text</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="Assets/imgs/cards/faq.png" style="width:50%">
+                        <div class="text">Caption Two</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img src="Assets/imgs/cards/team.png" style="width:50%">
+                        <div class="text">Caption Three</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </div>
         </div>
     </main>
@@ -81,5 +99,6 @@
         </div>
     </footer>
     <script src="Assets/js/dropdown.js"></script>
+    <script src="Assets/js/slider.js"></script>
 </body>
 </html>

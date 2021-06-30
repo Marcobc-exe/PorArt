@@ -27,22 +27,12 @@
         <form class="box" method="post" name="form" onSubmit="return validarFormulario();">
             <input type="text" name="" placeholder="Correo">
             <input type="text" name="" placeholder="Telefono">
-            <input type="password" name="" placeholder="Contraseña">
-            <input type="password" name="" placeholder="Confirmar Contraseña"><br>
+            <input type="password" name="" id="passwd" placeholder="Contraseña">
+            <input type="password" name="" id="passwd2" placeholder="Confirmar Contraseña"><br>
             <label><input type="checkbox" name="termsCond"> Al registrarse, acepta los <strong style="color:#fa983a">terminos y condiciones.</strong></label>
             <div id="info"></div>
-            <input type="submit" value="Crear Cuenta">
+            <input type="submit" value="Crear Cuenta" onClick="ValidarRegister()">
         </form>
-        <script>
-            const validarFormulario = () => {
-                elemento = document.forms["form"]["termsCond"].checked;
-                if (elemento == true){
-                    return false;
-                } else {
-                    document.getElementById("info").innerHTML = "¡Debe aceptar los terminos y condiciones de contrato!";
-                    return false;
-                }
-            }
-        </script>
+        <script src="Assets/js/register-login.js"></script>
 </body>
 </html>

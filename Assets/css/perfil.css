@@ -1,5 +1,5 @@
 .div-pefil {
-    background: grey;
+    background: none;
     margin: 20px;
     margin-top: 52px;
     margin-bottom: 52px;
@@ -32,6 +32,7 @@
     transform: translate(-48.5%);
     border: 1px solid black;
     background: white;
+    transition: All 0.3s ease 0s;
 }
 
 .container-btns p, .btn-dropdown {
@@ -48,4 +49,9 @@
 .container-info {
     display: none;
     background-color: white;
+}
+
+.container-btns:hover, .container-info:hover, .slideshow-container:hover {
+    background: #fa983a;
+    border-radius: 15px;
 }
